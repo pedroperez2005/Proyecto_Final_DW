@@ -1,0 +1,101 @@
+@media (max-width: 431px) {
+
+    p {
+        font-size: .625rem;
+      }
+
+      a{
+        font-size: 0.75rem;
+      }
+
+    .header-index,
+    .header-musica,
+    .header-bio,
+    .header-olam,
+    .header-zomoz {
+        height: 50vh;
+    }
+
+    .video {
+        width: 70%;
+        height: 70%;
+    }
+
+    .page-title {   
+        height: 50vh; 
+        p {
+            font-size: 3rem;
+    }
+}
+
+    .button-cta{
+        font-size: 8px;
+    }
+
+    .quien-es-dari {
+        grid-template-areas:
+            "a"
+            "c"
+            "b";
+    }
+
+    .olam {
+        grid-template-areas:
+            "d"
+            "e"
+            "f";
+    }
+
+    .zomoz {
+        grid-template-areas:
+            "g"
+            "h"
+            "i";
+    }
+
+    .article-qed,
+    .article-olam,
+    .article-zomoz {
+        text-align: center;
+        justify-self: center;
+    }
+
+    .leer-mas,
+    .saber-mas-olam,
+    .saber-mas-zomoz {
+        text-align: end;
+    }
+
+    .img-about,
+    .img-olam,
+    .img-zomoz {
+        justify-self: center;
+    }
+
+
+    .bio-absolute {
+        width: 60%;
+        top: 20%;
+        left: 5%;
+        p{
+            font-size: 8px;
+        }
+    }
+
+    .malo {
+        font-size: 3rem;
+    }
+
+    .olam-info {
+        width: 100%;
+    }
+
+    .art-zomoz{
+        width: 300px;
+    }
+
+    .video-ig img {
+        width: 50%;
+    }
+
+}

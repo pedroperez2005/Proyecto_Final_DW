@@ -1,0 +1,30 @@
+@mixin button($color) {
+    padding-top: 1rem;
+
+    a {
+        color: $color;
+        font-family: "Poppins Bold";
+        position: relative;
+        transition: 0.2s;
+
+
+        &:hover{
+            filter: drop-shadow(1px 1px 20px $color);
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: $color;
+            height: 2px;
+            width: 0;
+            left: 0;
+            bottom: -1.6px;
+            transition: 0.2s;
+        }
+    
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

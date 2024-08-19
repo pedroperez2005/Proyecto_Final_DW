@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+body {
+  font-family: "Poppins";
+  background-color: #efefef; }
+
+h1, h2 {
+  font-family: "Poppins Bold";
+  text-align: center;
+  padding: 10px; }
+
+img {
+  width: 100%; }
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf"); }
+
+.header-index, .header-musica, .header-bio, .header-olam, .header-zomoz {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../assets/img/hero.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+
+.header-musica {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 70%), url("../assets/img/hero-musica.jpg"); }
+
+.header-bio {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 70%), url("../assets/img/hero-bio.jpg"); }
+
+.header-olam {
+  background-image: url(../assets/img/hero-olam.png); }
+
+.header-zomoz {
+  background-image: url(../assets/img/hero-zomoz.jpg); }
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(41, 40, 35, 0.509); }
+  .page-title p {
+    font-size: 5rem;
+    font-family: "Poppins Bold";
+    color: #efefef; }
+    .page-title p:hover {
+      filter: drop-shadow(1px 1px 20px #efefef); }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #efefef;
+  padding: 1rem;
+  margin-top: 15px; }
+  footer p {
+    color: black;
+    margin: 0 auto; }
+
+.video-reciente {
+  text-align: center;
+  margin: 1rem 0; }
+
+.video {
+  width: 560px;
+  height: 315px; }
+
+.discografia {
+  background-color: black;
+  color: #efefef;
+  text-align: center;
+  margin: 1rem 0; }
+
+.title-qed {
+  grid-area: a; }
+
+.article-qed {
+  grid-area: b;
+  width: 70%;
+  text-align: end;
+  justify-self: end;
+  padding-right: 1rem; }
+
+.img-about {
+  grid-area: c;
+  width: 60%;
+  justify-self: start; }
+
+.quien-es-dari {
+  display: grid;
+  grid-template-areas: "a a" "b c" "b c";
+  align-items: center;
+  justify-items: center;
+  margin: 1rem 0; }
+
+.title-olam {
+  grid-area: d; }
+
+.img-olam {
+  grid-area: e;
+  width: 70%;
+  justify-self: end; }
+
+.article-olam {
+  grid-area: f;
+  width: 70%;
+  text-align: start;
+  justify-self: start;
+  padding-left: 1rem; }
+  .article-olam p {
+    color: #efefef; }
+
+.olam {
+  display: grid;
+  grid-template-areas: "d d" "e f" "e f";
+  align-items: center;
+  justify-items: center;
+  margin: 1rem 0;
+  background-color: black;
+  padding: 1rem; }
+  .olam h2 {
+    color: #5292F2; }
+
+.title-zomoz {
+  grid-area: g; }
+
+.img-zomoz {
+  grid-area: h;
+  width: 70%;
+  justify-self: end; }
+
+.article-zomoz {
+  grid-area: i;
+  width: 70%;
+  text-align: start;
+  justify-self: start;
+  padding-left: 1rem; }
+
+.zomoz {
+  display: grid;
+  grid-template-areas: "g g" "h i" "h i";
+  align-items: center;
+  justify-items: center;
+  margin: 1rem 0;
+  padding: 1rem 0; }
+
+.title {
+  text-align: center; }
+
+.music {
+  padding: 1rem 5rem; }
+
+.main-musica {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), #efefef); }
+
+.bio-1, .bio-2 {
+  grid-area: b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1rem; }
+
+.bio-2 {
+  grid-area: b2; }
+
+.bio-p {
+  width: 50%; }
+
+.bio-img {
+  width: 30%; }
+
+.bio-3 {
+  position: relative; }
+
+.bio-absolute {
+  position: absolute;
+  width: 40%;
+  top: 20%;
+  left: 15%; }
+
+.quote-name {
+  font-family: "Poppins Bold";
+  padding-top: 0.5rem; }
+
+.bio {
+  display: grid;
+  grid-template-areas: "b1 b1" "b2 b2";
+  padding: 0 4rem; }
+
+.olam-info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem; }
+
+.malo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 200px;
+  color: #efefef;
+  font-size: 5rem;
+  font-family: "Poppins Bold"; }
+
+.escucha-olam {
+  background-color: black;
+  color: #efefef;
+  text-align: center;
+  padding: 1rem 0; }
+
+.olam-acustico {
+  text-align: center;
+  margin: 1rem 0; }
+
+.art-zomoz {
+  width: 700px;
+  margin: 0 auto; }
+
+.escucha-zomoz {
+  background-color: black;
+  color: #efefef; }
+
+.video-ig img {
+  width: 30%; }
+
+.ver-mas {
+  padding-top: 1rem;
+  text-align: end;
+  padding: 1rem 3rem; }
+  .ver-mas a {
+    color: #efefef;
+    font-family: "Poppins Bold";
+    position: relative;
+    transition: 0.2s; }
+    .ver-mas a:hover {
+      filter: drop-shadow(1px 1px 20px #efefef); }
+    .ver-mas a::after {
+      content: "";
+      position: absolute;
+      background-color: #efefef;
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -1.6px;
+      transition: 0.2s; }
+    .ver-mas a:hover::after {
+      width: 100%; }
+
+.leer-mas {
+  padding-top: 1rem; }
+  .leer-mas a {
+    color: black;
+    font-family: "Poppins Bold";
+    position: relative;
+    transition: 0.2s; }
+    .leer-mas a:hover {
+      filter: drop-shadow(1px 1px 20px black); }
+    .leer-mas a::after {
+      content: "";
+      position: absolute;
+      background-color: black;
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -1.6px;
+      transition: 0.2s; }
+    .leer-mas a:hover::after {
+      width: 100%; }
+
+.saber-mas-olam {
+  padding-top: 1rem; }
+  .saber-mas-olam a {
+    color: #efefef;
+    font-family: "Poppins Bold";
+    position: relative;
+    transition: 0.2s; }
+    .saber-mas-olam a:hover {
+      filter: drop-shadow(1px 1px 20px #efefef); }
+    .saber-mas-olam a::after {
+      content: "";
+      position: absolute;
+      background-color: #efefef;
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -1.6px;
+      transition: 0.2s; }
+    .saber-mas-olam a:hover::after {
+      width: 100%; }
+
+.saber-mas-zomoz {
+  padding-top: 1rem; }
+  .saber-mas-zomoz a {
+    color: black;
+    font-family: "Poppins Bold";
+    position: relative;
+    transition: 0.2s; }
+    .saber-mas-zomoz a:hover {
+      filter: drop-shadow(1px 1px 20px black); }
+    .saber-mas-zomoz a::after {
+      content: "";
+      position: absolute;
+      background-color: black;
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -1.6px;
+      transition: 0.2s; }
+    .saber-mas-zomoz a:hover::after {
+      width: 100%; }
+
+.button-cta {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #31b7cf;
+  transition: all 1000ms;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #39c7e0;
+  background-color: rgba(41, 40, 35, 0.509); }
+  .button-cta:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391; }
+  .button-cta::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms; }
+  .button-cta:hover::before {
+    width: 250%; }
+
+.nav {
+  padding: 15px; }
+
+.navbar-brand {
+  color: #fff; }
+
+.nav-item {
+  padding: 0 10px; }
+
+.nav-link {
+  position: relative;
+  letter-spacing: 0.5px;
+  color: #ffffff9d; }
+  .nav-link:hover {
+    color: #fff; }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -1.6px;
+    transition: 0.2s; }
+  .nav-link:hover::after {
+    width: 100%; }
+
+.navbar-toggler {
+  color: transparent;
+  background-color: transparent;
+  border: 1px solid transparent; }
+
+.offcanvas {
+  bottom: auto;
+  color: #efefef;
+  background-color: rgba(41, 40, 35, 0.509); }
+
+.offcanvas-header {
+  flex-direction: row-reverse;
+  background-color: rgba(41, 40, 35, 0.509);
+  justify-content: space-between;
+  height: 4.6875rem; }
+
+.btn-close {
+  color: #efefef;
+  background-color: #efefef; }
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #fff; }
+
+.active {
+  color: #fff;
+  border-bottom: 2px solid #fff; }
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #efefef; }
+
+@media (max-width: 768px) {
+  p {
+    font-size: 0.8rem; }
+  .video {
+    width: 70%;
+    height: 70%; }
+  .page-title p {
+    font-size: 3.5rem; }
+  .button-cta {
+    font-size: 10px; }
+  .header-olam {
+    height: 50vh; }
+  .img-about {
+    width: 80%; }
+  .bio-1, .bio-2 {
+    flex-direction: column; }
+  .bio-2 {
+    flex-direction: column-reverse; }
+  .bio {
+    grid-template-areas: "b1" "b2"; }
+  .bio-p {
+    width: 80%; }
+  .bio-img {
+    width: 60%; }
+  .bio-absolute {
+    width: 50%;
+    top: 15%;
+    left: 5%; }
+    .bio-absolute p {
+      font-size: 10px; }
+  .malo p {
+    font-size: 3rem; }
+  .art-zomoz {
+    width: 500px; }
+  .video {
+    width: 50%;
+    height: 200px; } }
+
+@media (max-width: 431px) {
+  p {
+    font-size: .625rem; }
+  a {
+    font-size: 0.75rem; }
+  .header-index, .header-musica, .header-bio, .header-olam, .header-zomoz,
+  .header-musica,
+  .header-bio,
+  .header-olam,
+  .header-zomoz {
+    height: 50vh; }
+  .video {
+    width: 70%;
+    height: 70%; }
+  .page-title {
+    height: 50vh; }
+    .page-title p {
+      font-size: 3rem; }
+  .button-cta {
+    font-size: 8px; }
+  .quien-es-dari {
+    grid-template-areas: "a" "c" "b"; }
+  .olam {
+    grid-template-areas: "d" "e" "f"; }
+  .zomoz {
+    grid-template-areas: "g" "h" "i"; }
+  .article-qed,
+  .article-olam,
+  .article-zomoz {
+    text-align: center;
+    justify-self: center; }
+  .leer-mas,
+  .saber-mas-olam,
+  .saber-mas-zomoz {
+    text-align: end; }
+  .img-about,
+  .img-olam,
+  .img-zomoz {
+    justify-self: center; }
+  .bio-absolute {
+    width: 60%;
+    top: 20%;
+    left: 5%; }
+    .bio-absolute p {
+      font-size: 8px; }
+  .malo {
+    font-size: 3rem; }
+  .olam-info {
+    width: 100%; }
+  .art-zomoz {
+    width: 300px; }
+  .video-ig img {
+    width: 50%; } }

@@ -1,0 +1,45 @@
+.bio-1 {
+    grid-area: b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.bio-2 {
+    @extend .bio-1;
+    grid-area: b2;
+}
+
+.bio-p {
+    width: 50%;
+}
+
+.bio-img {
+    width: 30%;
+}
+
+.bio-3 {
+    position: relative;
+}
+
+.bio-absolute {
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 15%;
+}
+
+.quote-name {
+    font-family: "Poppins Bold";
+    padding-top: 0.5rem;
+}
+
+.bio {
+    display: grid;
+    grid-template-areas:
+        "b1 b1"
+        "b2 b2";
+    padding: 0 4rem;
+}

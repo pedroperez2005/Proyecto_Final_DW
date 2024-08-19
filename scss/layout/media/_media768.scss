@@ -1,0 +1,76 @@
+@media (max-width: 768px) {
+
+    p{
+        font-size: 0.8rem;
+    }
+
+    .video {
+        width: 70%;
+        height: 70%;
+    }
+
+    .page-title {    
+        p {
+            font-size: 3.5rem;
+    }
+}
+
+    .button-cta{
+        font-size: 10px;
+    }
+
+    .header-olam {
+        height: 50vh;
+    }
+
+    .img-about {
+        width: 80%;
+    }
+
+    .bio-1 {
+        flex-direction: column;
+    }
+
+    .bio-2 {
+        flex-direction: column-reverse;
+    }
+
+    .bio {
+        grid-template-areas:
+            "b1"
+            "b2";
+    }
+
+    .bio-p {
+        width: 80%;
+    }
+
+    .bio-img {
+        width: 60%;
+    }
+
+    .bio-absolute {
+        width: 50%;
+        top: 15%;
+        left: 5%;
+        p{
+            font-size: 10px;
+        }
+    }
+
+    .malo{
+        p{
+            font-size: 3rem;
+        }
+    }
+
+    .art-zomoz{
+        width: 500px;
+    }
+
+    .video{
+        width: 50%;
+        height: 200px;
+    }
+
+}

@@ -1,0 +1,50 @@
+.header-index {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), 
+    url('../assets/img/hero.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.header-musica {
+    @extend .header-index;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 70%), 
+    url('../assets/img/hero-musica.jpg');
+}
+
+.header-bio {
+    @extend .header-index;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 70%), 
+    url('../assets/img/hero-bio.jpg');
+}
+
+.header-olam {
+    @extend .header-index;
+    background-image: url(../assets/img/hero-olam.png);
+}
+
+.header-zomoz {
+    @extend .header-index;
+    background-image: url(../assets/img/hero-zomoz.jpg);
+}
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(41, 40, 35, 0.509);
+
+    p {
+        font-size: 5rem;
+        font-family: "Poppins Bold";
+        color: $colorWhite;
+
+        &:hover{
+            filter: drop-shadow(1px 1px 20px $colorWhite);
+        }
+    }
+
+}

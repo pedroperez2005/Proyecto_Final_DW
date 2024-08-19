@@ -1,0 +1,119 @@
+// video
+.video-reciente {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+}
+
+// música
+.discografia {
+    background-color: $colorBlack;
+    color: $colorWhite;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+// quién es Dariana
+.title-qed {
+    grid-area: a;
+}
+
+.article-qed {
+    grid-area: b;
+    width: 70%;
+    text-align: end;
+    justify-self: end;
+    padding-right: 1rem;
+}
+
+.img-about {
+    grid-area: c;
+    width: 60%;
+    justify-self: start;
+}
+
+.quien-es-dari {
+    display: grid;
+    grid-template-areas:
+        "a a"
+        "b c"
+        "b c";
+    align-items: center;
+    justify-items: center;
+    margin: 1rem 0;
+}
+
+// olam
+.title-olam {
+    grid-area: d;
+}
+
+.img-olam {
+    grid-area: e;
+    width: 70%;
+    justify-self: end;
+}
+
+.article-olam {
+    grid-area: f;
+    width: 70%;
+    text-align: start;
+    justify-self: start;
+    padding-left: 1rem;
+
+    p {
+        color: $colorWhite;
+    }
+}
+
+.olam {
+    display: grid;
+    grid-template-areas:
+        "d d"
+        "e f"
+        "e f";
+    align-items: center;
+    justify-items: center;
+    margin: 1rem 0;
+    background-color: black;
+    padding: 1rem;
+
+    h2 {
+        color: #5292F2;
+    }
+}
+
+// zomoz
+.title-zomoz {
+    grid-area: g;
+}
+
+.img-zomoz {
+    grid-area: h;
+    width: 70%;
+    justify-self: end;
+}
+
+.article-zomoz {
+    grid-area: i;
+    width: 70%;
+    text-align: start;
+    justify-self: start;
+    padding-left: 1rem;
+}
+
+.zomoz {
+    display: grid;
+    grid-template-areas:
+        "g g"
+        "h i"
+        "h i";
+    align-items: center;
+    justify-items: center;
+    margin: 1rem 0;
+    padding: 1rem 0;
+}

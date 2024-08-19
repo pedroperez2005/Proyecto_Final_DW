@@ -1,0 +1,24 @@
+// utilities
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+// base
+@import "./base/reset";
+@import "./base/tipografias";
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/index";
+@import "./layout/musica";
+@import "./layout/biografia";
+@import "./layout/olam";
+@import "./layout/zomoz";
+
+// componentes
+@import "./components/buttons";
+@import "./components/navbar";
+
+// media queries
+@import "./layout/media/media768";
+@import "./layout/media/media430";
