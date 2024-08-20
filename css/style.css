@@ -76,6 +76,20 @@ footer {
     color: black;
     margin: 0 auto; }
 
+.media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  height: 100vh;
+  width: 100vw;
+  padding-bottom: 50px; }
+  .media-icons a {
+    transition: 0.3s; }
+    .media-icons a:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(1px 1px 20px #efefef); }
+
 .video-reciente {
   text-align: center;
   margin: 1rem 0; }
@@ -475,6 +489,14 @@ footer {
   .header-olam,
   .header-zomoz {
     height: 50vh; }
+  .media-icons {
+    gap: 0;
+    justify-content: space-evenly;
+    height: 50vh;
+    padding-bottom: 25px; }
+    .media-icons svg {
+      width: 36px;
+      height: 36px; }
   .video {
     width: 70%;
     height: 70%; }

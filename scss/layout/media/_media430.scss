@@ -16,6 +16,17 @@
         height: 50vh;
     }
 
+    .media-icons{
+        gap: 0;
+        justify-content: space-evenly;
+        height: 50vh;
+        padding-bottom: 25px;
+        svg{
+            width: 36px;
+            height: 36px;
+        }
+    }
+
     .video {
         width: 70%;
         height: 70%;
