@@ -55,6 +55,8 @@
     grid-area: c;
     width: 60%;
     justify-self: start;
+    filter: drop-shadow(10px 10px 5px #8dbfb1);
+
 }
 
 .quien-es-dari {
@@ -79,6 +81,7 @@
     grid-area: e;
     width: 80%;
     justify-self: end;
+    filter: drop-shadow(-10px 10px 5px #7093c8);
 }
 
 .article-olam {
@@ -97,7 +100,7 @@
         "e f";
     align-items: center;
     justify-items: center;
-    padding: 1rem;
+    padding: 2rem 0;
    background-color: $colorBlack;
 
     p, h2{
@@ -115,6 +118,7 @@
     grid-area: h;
     width: 70%;
     justify-self: end;
+    filter: drop-shadow(-10px 10px 5px #9d6837);
 }
 
 .article-zomoz {

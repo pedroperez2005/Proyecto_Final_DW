@@ -10,8 +10,9 @@
     gap: 20px;
 }
 
-.list-music{
+.list-music {
     width: 350px;
+
     ol li {
         list-style-type: decimal;
         padding-left: 15px;
@@ -23,7 +24,7 @@
     max-width: 250px;
     max-height: 250px;
     overflow: hidden;
-    
+    filter: drop-shadow(10px 10px 5px $colorBlack);
 
     img {
         width: 100%;
@@ -54,36 +55,40 @@
         transition: opacity 0.5s ease;
     }
 
-    &:hover{
-        .overlay, .title{
+    &:hover {
+
+        .overlay,
+        .title {
             opacity: 1;
         }
-        img{
+
+        img {
             transform: scale(1.05);
         }
     }
 }
 
-.sencillos{
+.sencillos {
     @extend .music;
-    img{
-        width: 250px;
-    }
-    .cancion{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
+    gap: 30px;
 }
 
-.song{
+.cancion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-song {
     position: relative;
     color: $colorBlack;
     transition: 0.2s;
-    &:hover{
+
+    &:hover {
         color: #2c9caf;
     }
+
     &::after {
         content: "";
         position: absolute;
