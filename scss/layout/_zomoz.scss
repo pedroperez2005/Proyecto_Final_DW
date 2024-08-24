@@ -8,6 +8,7 @@
     color: $colorWhite;
 }
 
-.video-ig img {
-    width: 30%;
+.video-ig{
+    display: flex;
+    justify-content: center;
 }

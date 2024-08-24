@@ -185,8 +185,78 @@ footer {
 .title {
   text-align: center; }
 
-.music {
-  padding: 1rem 5rem; }
+.music, .sencillos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; }
+
+.list-music {
+  width: 350px; }
+  .list-music ol li {
+    list-style-type: decimal;
+    padding-left: 15px; }
+
+.album-cover {
+  position: relative;
+  max-width: 250px;
+  max-height: 250px;
+  overflow: hidden; }
+  .album-cover img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease; }
+  .album-cover .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.5s ease; }
+  .album-cover .title {
+    color: #efefef;
+    font-size: 1.5625rem;
+    font-family: "Poppins Bold";
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease; }
+  .album-cover:hover .overlay, .album-cover:hover .title {
+    opacity: 1; }
+  .album-cover:hover img {
+    transform: scale(1.05); }
+
+.sencillos img {
+  width: 250px; }
+
+.sencillos .cancion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; }
+
+.song {
+  position: relative;
+  color: #1C1C1C;
+  transition: 0.2s; }
+  .song:hover {
+    color: #2c9caf; }
+  .song::after {
+    content: "";
+    position: absolute;
+    background-color: #2c9caf;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -1.6px;
+    transition: 0.2s; }
+  .song:hover::after {
+    width: 100%; }
 
 .bio-1, .bio-2 {
   grid-area: b1;
@@ -226,9 +296,9 @@ footer {
   padding: 0 4rem; }
 
 .olam-info {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
+  width: 700px;
+  text-align: justify;
+  margin: 0 auto;
   gap: 1rem;
   padding: 1rem; }
 
@@ -260,8 +330,9 @@ footer {
   background-color: #1C1C1C;
   color: #efefef; }
 
-.video-ig img {
-  width: 30%; }
+.video-ig {
+  display: flex;
+  justify-content: center; }
 
 .ver-mas {
   padding-top: 1rem;
@@ -536,6 +607,9 @@ footer {
   .img-olam,
   .img-zomoz {
     justify-self: center; }
+  .list-music {
+    display: flex;
+    justify-content: center; }
   .bio-absolute {
     width: 60%;
     top: 20%;
