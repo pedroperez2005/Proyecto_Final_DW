@@ -1,3 +1,4 @@
+
 .bio-1 {
     grid-area: b1;
     display: flex;
@@ -29,6 +30,9 @@
     width: 40%;
     top: 20%;
     left: 15%;
+    p{
+        color: $colorBlack;
+    }
 }
 
 .quote-name {

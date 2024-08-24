@@ -12,9 +12,11 @@
     align-items: center;
     background-color: $colorBlack;
     height: 200px;
-    color: $colorWhite;
-    font-size: 5rem;
-    font-family: "Poppins Bold";
+    p{
+        color: $colorWhite;
+        font-size: 5rem;
+        font-family: "Poppins Bold";
+    }
 }
 
 .escucha-olam {
@@ -26,5 +28,4 @@
 
 .olam-acustico {
     text-align: center;
-    margin: 1rem 0;
 }

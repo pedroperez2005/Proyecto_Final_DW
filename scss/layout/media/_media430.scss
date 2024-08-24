@@ -1,12 +1,13 @@
 @media (max-width: 431px) {
 
     p {
-        font-size: .625rem;
-      }
+        font-size: .875rem;
+        text-align: justify;
+    }
 
-      a{
-        font-size: 0.75rem;
-      }
+    a {
+        font-size: .875rem;
+    }
 
     .header-index,
     .header-musica,
@@ -16,12 +17,13 @@
         height: 50vh;
     }
 
-    .media-icons{
+    .media-icons {
         gap: 0;
         justify-content: space-evenly;
         height: 50vh;
         padding-bottom: 25px;
-        svg{
+
+        svg {
             width: 36px;
             height: 36px;
         }
@@ -32,14 +34,15 @@
         height: 70%;
     }
 
-    .page-title {   
-        height: 50vh; 
+    .page-title {
+        height: 50vh;
+
         p {
             font-size: 3rem;
+        }
     }
-}
 
-    .button-cta{
+    .button-cta {
         font-size: 8px;
     }
 
@@ -69,6 +72,7 @@
     .article-zomoz {
         text-align: center;
         justify-self: center;
+        padding: 1rem 0;
     }
 
     .leer-mas,
@@ -88,7 +92,8 @@
         width: 60%;
         top: 20%;
         left: 5%;
-        p{
+
+        p {
             font-size: 8px;
         }
     }
@@ -101,7 +106,7 @@
         width: 100%;
     }
 
-    .art-zomoz{
+    .art-zomoz {
         width: 300px;
     }
 

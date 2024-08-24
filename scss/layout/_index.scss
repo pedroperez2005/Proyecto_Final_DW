@@ -19,12 +19,16 @@
 // video
 .video-reciente {
     text-align: center;
-    margin: 1rem 0;
 }
 
 .video {
     width: 560px;
     height: 315px;
+    filter: drop-shadow(10px 10px 5px #270b05);
+    transition: 0.3s;
+    &:hover{
+        transform: scale(0.9);
+    }
 }
 
 // música
@@ -32,7 +36,6 @@
     background-color: $colorBlack;
     color: $colorWhite;
     text-align: center;
-    margin: 1rem 0;
 }
 
 // quién es Dariana
@@ -62,7 +65,9 @@
         "b c";
     align-items: center;
     justify-items: center;
-    margin: 1rem 0;
+    p, h2{
+        color: $colorBlack;
+    }
 }
 
 // olam
@@ -72,7 +77,7 @@
 
 .img-olam {
     grid-area: e;
-    width: 70%;
+    width: 80%;
     justify-self: end;
 }
 
@@ -82,10 +87,6 @@
     text-align: start;
     justify-self: start;
     padding-left: 1rem;
-
-    p {
-        color: $colorWhite;
-    }
 }
 
 .olam {
@@ -96,13 +97,13 @@
         "e f";
     align-items: center;
     justify-items: center;
-    margin: 1rem 0;
-    background-color: black;
     padding: 1rem;
+   background-color: $colorBlack;
 
-    h2 {
-        color: #5292F2;
+    p, h2{
+        color: $colorWhite;
     }
+
 }
 
 // zomoz
@@ -122,6 +123,7 @@
     text-align: start;
     justify-self: start;
     padding-left: 1rem;
+    color: $colorBlack;
 }
 
 .zomoz {
@@ -132,6 +134,5 @@
         "h i";
     align-items: center;
     justify-items: center;
-    margin: 1rem 0;
-    padding: 1rem 0;
+
 }

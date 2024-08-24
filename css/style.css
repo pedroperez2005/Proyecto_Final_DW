@@ -24,6 +24,12 @@ h1, h2 {
 img {
   width: 100%; }
 
+p, a {
+  font-size: 1.125rem; }
+
+section {
+  padding: 1.5rem 0; }
+
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins/Poppins-Regular.ttf"); }
@@ -69,11 +75,11 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #efefef;
-  padding: 1rem;
-  margin-top: 15px; }
+  gap: 20px;
+  background-color: #1C1C1C;
+  padding: 1.5rem; }
   footer p {
-    color: black;
+    color: #efefef;
     margin: 0 auto; }
 
 .media-icons {
@@ -91,18 +97,20 @@ footer {
       filter: drop-shadow(1px 1px 20px #efefef); }
 
 .video-reciente {
-  text-align: center;
-  margin: 1rem 0; }
+  text-align: center; }
 
 .video {
   width: 560px;
-  height: 315px; }
+  height: 315px;
+  filter: drop-shadow(10px 10px 5px #270b05);
+  transition: 0.3s; }
+  .video:hover {
+    transform: scale(0.9); }
 
 .discografia {
-  background-color: black;
+  background-color: #1C1C1C;
   color: #efefef;
-  text-align: center;
-  margin: 1rem 0; }
+  text-align: center; }
 
 .title-qed {
   grid-area: a; }
@@ -123,15 +131,16 @@ footer {
   display: grid;
   grid-template-areas: "a a" "b c" "b c";
   align-items: center;
-  justify-items: center;
-  margin: 1rem 0; }
+  justify-items: center; }
+  .quien-es-dari p, .quien-es-dari h2 {
+    color: #1C1C1C; }
 
 .title-olam {
   grid-area: d; }
 
 .img-olam {
   grid-area: e;
-  width: 70%;
+  width: 80%;
   justify-self: end; }
 
 .article-olam {
@@ -140,19 +149,16 @@ footer {
   text-align: start;
   justify-self: start;
   padding-left: 1rem; }
-  .article-olam p {
-    color: #efefef; }
 
 .olam {
   display: grid;
   grid-template-areas: "d d" "e f" "e f";
   align-items: center;
   justify-items: center;
-  margin: 1rem 0;
-  background-color: black;
-  padding: 1rem; }
-  .olam h2 {
-    color: #5292F2; }
+  padding: 1rem;
+  background-color: #1C1C1C; }
+  .olam p, .olam h2 {
+    color: #efefef; }
 
 .title-zomoz {
   grid-area: g; }
@@ -167,24 +173,20 @@ footer {
   width: 70%;
   text-align: start;
   justify-self: start;
-  padding-left: 1rem; }
+  padding-left: 1rem;
+  color: #1C1C1C; }
 
 .zomoz {
   display: grid;
   grid-template-areas: "g g" "h i" "h i";
   align-items: center;
-  justify-items: center;
-  margin: 1rem 0;
-  padding: 1rem 0; }
+  justify-items: center; }
 
 .title {
   text-align: center; }
 
 .music {
   padding: 1rem 5rem; }
-
-.main-musica {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), #efefef); }
 
 .bio-1, .bio-2 {
   grid-area: b1;
@@ -211,6 +213,8 @@ footer {
   width: 40%;
   top: 20%;
   left: 15%; }
+  .bio-absolute p {
+    color: #1C1C1C; }
 
 .quote-name {
   font-family: "Poppins Bold";
@@ -232,28 +236,28 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  height: 200px;
-  color: #efefef;
-  font-size: 5rem;
-  font-family: "Poppins Bold"; }
+  background-color: #1C1C1C;
+  height: 200px; }
+  .malo p {
+    color: #efefef;
+    font-size: 5rem;
+    font-family: "Poppins Bold"; }
 
 .escucha-olam {
-  background-color: black;
+  background-color: #1C1C1C;
   color: #efefef;
   text-align: center;
   padding: 1rem 0; }
 
 .olam-acustico {
-  text-align: center;
-  margin: 1rem 0; }
+  text-align: center; }
 
 .art-zomoz {
   width: 700px;
   margin: 0 auto; }
 
 .escucha-zomoz {
-  background-color: black;
+  background-color: #1C1C1C;
   color: #efefef; }
 
 .video-ig img {
@@ -285,16 +289,16 @@ footer {
 .leer-mas {
   padding-top: 1rem; }
   .leer-mas a {
-    color: black;
+    color: #1C1C1C;
     font-family: "Poppins Bold";
     position: relative;
     transition: 0.2s; }
     .leer-mas a:hover {
-      filter: drop-shadow(1px 1px 20px black); }
+      filter: drop-shadow(1px 1px 20px #1C1C1C); }
     .leer-mas a::after {
       content: "";
       position: absolute;
-      background-color: black;
+      background-color: #1C1C1C;
       height: 2px;
       width: 0;
       left: 0;
@@ -327,16 +331,16 @@ footer {
 .saber-mas-zomoz {
   padding-top: 1rem; }
   .saber-mas-zomoz a {
-    color: black;
+    color: #1C1C1C;
     font-family: "Poppins Bold";
     position: relative;
     transition: 0.2s; }
     .saber-mas-zomoz a:hover {
-      filter: drop-shadow(1px 1px 20px black); }
+      filter: drop-shadow(1px 1px 20px #1C1C1C); }
     .saber-mas-zomoz a::after {
       content: "";
       position: absolute;
-      background-color: black;
+      background-color: #1C1C1C;
       height: 2px;
       width: 0;
       left: 0;
@@ -380,7 +384,8 @@ footer {
     width: 250%; }
 
 .nav {
-  padding: 15px; }
+  padding: 15px;
+  background-color: rgba(41, 40, 35, 0.509); }
 
 .navbar-brand {
   color: #fff; }
@@ -441,8 +446,8 @@ footer {
   color: #efefef; }
 
 @media (max-width: 768px) {
-  p {
-    font-size: 0.8rem; }
+  p, a {
+    font-size: 1rem; }
   .video {
     width: 70%;
     height: 70%; }
@@ -470,6 +475,8 @@ footer {
     left: 5%; }
     .bio-absolute p {
       font-size: 10px; }
+  .header-olam .page-title {
+    height: 50vh; }
   .malo p {
     font-size: 3rem; }
   .art-zomoz {
@@ -482,9 +489,10 @@ footer {
 
 @media (max-width: 431px) {
   p {
-    font-size: .625rem; }
+    font-size: .875rem;
+    text-align: justify; }
   a {
-    font-size: 0.75rem; }
+    font-size: .875rem; }
   .header-index, .header-musica, .header-bio, .header-olam, .header-zomoz,
   .header-musica,
   .header-bio,
@@ -518,7 +526,8 @@ footer {
   .article-olam,
   .article-zomoz {
     text-align: center;
-    justify-self: center; }
+    justify-self: center;
+    padding: 1rem 0; }
   .leer-mas,
   .saber-mas-olam,
   .saber-mas-zomoz {

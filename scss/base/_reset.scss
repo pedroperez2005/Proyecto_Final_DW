@@ -20,6 +20,7 @@ body {
     font-family: "Poppins";
     background-color: $colorWhite;
 }
+
 h1, h2 {
     font-family: "Poppins Bold";
     text-align: center;
@@ -30,3 +31,10 @@ img {
     width: 100%;
 }
 
+p, a{
+    font-size: 1.125rem;
+}
+
+section{
+    padding: 1.5rem 0;
+}

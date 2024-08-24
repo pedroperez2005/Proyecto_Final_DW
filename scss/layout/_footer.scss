@@ -2,12 +2,12 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: $colorWhite;
-    padding: 1rem;
-    margin-top: 15px;
+    gap: 20px;
+    background-color: $colorBlack;
+    padding: 1.5rem;
 
     p {
-        color: $colorBlack;
+        color: $colorWhite;
         margin: 0 auto;
     }
 }
